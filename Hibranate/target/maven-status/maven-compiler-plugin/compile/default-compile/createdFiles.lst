@@ -1,0 +1,6 @@
+com\company\utill\HibranateUtil.class
+com\company\controller\UserController.class
+com\company\model\User.class
+com\company\model\UserOperation.class
+com\company\model\Department.class
+com\company\model\Operation.class
