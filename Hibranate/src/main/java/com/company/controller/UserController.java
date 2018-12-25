@@ -79,17 +79,7 @@ public class UserController extends HttpServlet {
 	private void getAllUsers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		userOperation = new UserOperation();
 		List<User> userList = userOperation.getAll("FROM User");
-		
-		User user = new User();
-		user.setAddress("ddddd");
-		user.setName("ddddejurrr");
-		user.setAge(10);
-		user.setActive(true);
-		List<User> list = new ArrayList<>();
-		list.add(user);
 		request.setAttribute("userList", userList);
-		request.setAttribute("name", "ddd");
-		System.out.println(userList.size());
 		RequestDispatcher dispatcher =request.getRequestDispatcher("jsp/user/usertable.jsp");
 	    dispatcher.forward(request, response);
 		
